@@ -45,54 +45,103 @@
       gett("timecount").innerHTML = time;
 
     } else{ setTimeout(init, 50); }
+
   }
+
   document.onload = init(); $(document).ready(function(){ 
+
     $('.link-out-btn').click(function(){    
+
       window.location = page;  }); 
+
     $('#linkout').text(page); });
+
 </script>
+
 <script>
+
   function closeWindow() {        
+
     window.open('','_parent','');        
+
     window.close();    
+
   }
+
 </script>
-
-Bạn vừa nhấp vào một liên kết không thuộc <b><a href="https://www.hungqb.com/">Hung Quang Binh</a>.</b>  Liên kết bạn muốn đến là: <code><span id="linkout"></span></code> <br /> Trang sẽ tự chuyển sang liên kết trên sau <b><span id="timecount" style="color: red;"></span></b> giây! <br /><div style="text-align: center;"> <button class="link-out-btn" id="button1">Đồng ý</button> <button id="button2" onclick="javascript:closeWindow();">Từ chối</button> </div>
-
+<br/><br/>
+<center>
+Bạn vừa nhấp vào một liên kết không thuộc <b><a href="https://www.hungqb.com/">HUNG QB BLOG</a>.</b>  Liên kết bạn muốn đến là: <code><span id="linkout"></span></code> <br /> Trang sẽ tự chuyển sang liên kết trên sau <b><span id="timecount" style="color: red;"></span></b> giây! <br />
+<!-- <div style="text-align: center;"> <button class="link-out-btn" id="button1">Đồng ý</button> <button id="button2" onclick="javascript:closeWindow();">Từ chối</button> </div> -->
+  </center>
 <style>
+
   #button1 {    
+
     color: #FFF;
+
     padding: 0 20px;
+
     margin: 10px 0 5px 0;
+
     cursor: pointer;
+
     background-color:#4d90fe;
+
     box-shadow: 0px 4px 0px 0px #0f53c0;
+
     border:1px solid #357ae8;
+
     border-radius:3px;
+
     text-shadow:0px 1px 0px #00317f;
+
 }
+
   #button1:hover {
+
     background-color:#357ae8;
+
 }
+
   #button1:active {
+
     position:relative;top:2px;box-shadow: 0px 2px 0px 0px #0f53c0;
+
 }
+
   #button2 {
+
     color: #FFF;
+
     padding: 0 20px;
+
     margin: 10px 0 5px 0;
+
     cursor: pointer;
+
     background-color:#fe4d4d;
+
     box-shadow: 0px 4px 0px 0px #c00f0f;
+
     border:1px solid #e83535;
+
     border-radius:3px;
-   text-shadow:0px 1px 0px #7f0000;
+
+    text-shadow:0px 1px 0px #7f0000;
+
 }
+
   #button2:hover {
+
     background-color:#d12020;
+
 }
+
   #button2:active {
+
     position:relative;top:2px;box-shadow: 0px 2px 0px 0px #c00f0f;
+
 }
+
 </style>
